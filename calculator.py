@@ -24,10 +24,9 @@ operations = {
     "*": multiply,
     "/": divide
 }
-new_calculation = False
-while not new_calculation:
-    calculation_over = False
 
+def calculator():
+    calculation_over = False
     first_number = float(input("What's the first number?: "))
     while not calculation_over:
         print("+\n- \n* \n/")
@@ -63,3 +62,5 @@ while not new_calculation:
         else:
             calculation_over = True
             print("\n" * 100)
+            calculator()
+calculator()
